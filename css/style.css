@@ -2,6 +2,7 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 body {
@@ -41,6 +42,41 @@ body {
     box-shadow: 0 0 0 10px #ff2d7544,
     0 0 50px #ff2d75,
     0 0 100px #ff2d75;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    border: 2px solid #4fc3dc;
+    border-radius: 25px;
+    background-color: #4fc3dc;
+    opacity: 0.9;
+}
+
+.content .coding {
+    display: inline-block;
+    width: 48%;
+    border-radius: 25px;
+    transition: background-color 0.7s ease, animation-delay 0s ease 1.5s;
+    margin: 0.5em;
+}
+
+.content .coding:hover {
+    background-color: #fdfdfd44;
+}
+
+.content .coding a {
+    text-decoration: none;
+}
+
+.content .coding img {
+    width: 100%;
+    border-radius: 25px;
+    padding: 1em;
 }
 
 @keyframes animate {
