@@ -27,11 +27,15 @@
     background-color: var(--background-dark-color);
     color: var(--font-light-color);
     display: grid;
-    min-width: 100vh;
-    width: 100%;
+    grid-template-areas: 'header header header header header header header header header header header header'
+                        'nav nav nav nav nav nav nav nav nav nav nav nav'
+                        'left left left main main main main main main right right right'
+                        'footer footer footer footer footer footer footer footer footer footer footer footer';
+    width: 100vw;
 }
 
 header {
+    grid-area: header;
     position: fixed;
     padding: 1rem 1rem;
     background-color: var(--background-light-color);
@@ -45,6 +49,7 @@ h1 {
 }
 
 nav {
+    grid-area: nav;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -64,6 +69,7 @@ a {
 }
 
 main {
+    grid-area: main;
     padding: 10rem 1rem;
 }
 
@@ -84,4 +90,56 @@ section {
     vertical-align: middle;
 }
 
+.left {
+    grid-area: left;
+    background-color: blueviolet;
+    padding: 1rem 1rem;
+    text-align: center;
+}
 
+.right {
+    grid-area: right;
+    background-color: violet;
+    padding: 1rem 1rem;
+    text-align: center;
+}
+
+footer {
+    grid-area: footer;
+    background-color: var(--background-light-color);
+    padding: 1rem 1rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-areas: 'header header'
+                            'nav nav'
+                            'main main'
+                            'footer footer';
+    
+    }
+
+    .left, .right {
+        display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        grid-template-areas: 'header header header header header header header header header header header header'
+                        'nav nav nav nav nav nav nav nav nav nav nav nav'
+                        'left left main main main main main main main main right right'
+                        'footer footer footer footer footer footer footer footer footer footer footer footer';
+    
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        grid-template-areas: 'header header header header header header header header header header header header'
+                        'nav nav nav nav nav nav nav nav nav nav nav nav'
+                        'left left left main main main main main main right right right'
+                        'footer footer footer footer footer footer footer footer footer footer footer footer';
+    
+    }
+}
