@@ -65,13 +65,32 @@ a {
     padding: 0.5em 1em;
 }
 
-main {
-    grid-area: main;
-    padding: 10rem 1rem;
-}
-
 section {
     height: 500px;
+}
+
+main {
+    grid-area: main;
+    ;
+}
+
+.aboutme {
+    padding: 15vh 2vw 5vh 2vw;
+    background-color: var(--background-dark-color);
+}
+
+.projects {
+    background-color: var(--background-light-color-2);
+    padding: 5vh 2vw;
+}
+
+.contact {
+    background-color: var(--background-dark-color);
+    padding: 5vh 2vw;
+}
+
+.project {
+    padding-top: 2vh;
 }
 
 #top {
