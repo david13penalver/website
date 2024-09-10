@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    scroll-padding-top: 15vh;
+    scroll-padding-top: 14vh;
 }
 
 :root {
@@ -40,14 +40,13 @@ header {
     position: fixed;
     padding: 1rem 1rem;
     background-color: var(--background-light-color);
+    height: 12vh;
     width: 100%;
     z-index: 1000;
     text-align: center;
 }
 
-h1 {
-    display: block;
-}
+
 
 nav {
     grid-area: nav;
@@ -55,10 +54,7 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    position: fixed;
-    padding: 5.3em 0em 1em;
-    background-color: var(--background-dark-grey);
-    background-color: white;
+    padding-top: 1rem;
 }
 
 a {
@@ -129,7 +125,7 @@ footer {
     .container {
         grid-template-areas: 'header header header header header header header header header header header header'
                         'nav nav nav nav nav nav nav nav nav nav nav nav'
-                        'left left main main main main main main main main right right'
+                        'left left left main main main main main main right right right'
                         'footer footer footer footer footer footer footer footer footer footer footer footer';
     
     }
