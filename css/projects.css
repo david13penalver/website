@@ -96,7 +96,7 @@ main {
 #top {
     position: fixed;
     display: flex;
-    bottom: 5vh;
+    bottom: 6vh;
     right: 5vw;
     background-color: var(--background-light-color);
     height: 3rem;
